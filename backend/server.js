@@ -3,10 +3,8 @@ import dotenv from 'dotenv';
 import connectDB from './config/db.js';
 import authRoutes from './routes/auth.js';
 import noteRoutes from './routes/notes.js';
-<<<<<<< HEAD
-=======
+
 import path from 'path';
->>>>>>> b93e098 (chore: initialize project with package.json and vercel.json configuration)
 dotenv.config();
 
 const PORT = process.env.PORT || 5000;
@@ -27,8 +25,6 @@ connectDB();
 app.listen(PORT , ()=>{
     console.log(`Server is running on port ${PORT}`);
 })
-<<<<<<< HEAD
-=======
 
 const __dirname = path.resolve();
 
@@ -41,4 +37,3 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'frontend', 'dist', 'index.html'))
   );
 }
->>>>>>> b93e098 (chore: initialize project with package.json and vercel.json configuration)
